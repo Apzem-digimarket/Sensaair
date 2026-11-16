@@ -55,7 +55,7 @@ collections:
         default: true
       - name: title
         label: Title
-        hint: "Main name, e.g. AERIS or APZEM-BTFH-700."
+        hint: "Main name, e.g. AERIS or AERIS CLEAN."
       - name: titleAccent
         label: Title — green part
         required: false

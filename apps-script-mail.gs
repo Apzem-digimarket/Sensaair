@@ -1,6 +1,6 @@
 // Receives the quotation form from aerisclean.in, logs it to a Google Sheet
-// ("Aeris Clean - Quote Enquiries") and emails it to aerisclean.solutions@gmail.com.
-var TO = 'aerisclean.solutions@gmail.com';
+// ("Aeris Clean - Quote Enquiries") and emails it to sales@aerisclean.in.
+var TO = 'sales@aerisclean.in';
 var SHEET_NAME = 'Aeris Clean - Quote Enquiries';
 var HEADERS = ['Date', 'Name', 'Company', 'Phone', 'Email', 'Product', 'Requirement', 'Page'];
 
