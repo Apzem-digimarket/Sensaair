@@ -290,7 +290,7 @@
       h('label', { class: 'check' }, h('input', { type: 'checkbox', checked: d.visible, onchange: (ev) => (d.visible = ev.target.checked) }),
         h('span', {}, h('b', {}, 'Show on website'), h('small', {}, 'Untick to keep it as a hidden draft.'))),
       h('details', { class: 'advanced' }, h('summary', {}, 'Advanced: page link name'),
-        field('Link name (anchor)', textInput(d, 'slug', { maxlength: '80', placeholder: 'Automatic from the title' }), 'Used for links like aerisclean.in/#sensaair. Changing it breaks old links.')));
+        field('Link name (anchor)', textInput(d, 'slug', { maxlength: '80', placeholder: 'Automatic from the title' }), 'Used for links like sensaair.com/#sensaair. Changing it breaks old links.')));
 
     // Picture
     const picture = h('div', {},
@@ -532,7 +532,7 @@
   }
   function markUnpublished() { publishState.unpublished = true; paintPublish(); }
   async function publish() {
-    if (!confirm('Publish your changes to the live website (www.aerisclean.in)?')) return;
+    if (!confirm('Publish your changes to the live website (www.sensaair.com)?')) return;
     publishBtn.disabled = true;
     publishBtn.classList.add('busy');
     publishBtn.lastChild.textContent = 'Publishing…';

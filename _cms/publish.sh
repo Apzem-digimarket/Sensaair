@@ -1,10 +1,10 @@
 #!/bin/bash
-# Publishes the Sensaair website → https://www.aerisclean.in
+# Publishes the Sensaair website → https://www.sensaair.com
 #
 # 1. Builds index.html from _cms/template.html + the content files in _cms/data
 # 2. Commits the page, product images and content to GitHub (branch main)
 # 3. A GitHub Action rebuilds and publishes the site about a minute later
-#    (the same happens after edits in the online admin, https://www.aerisclean.in/admin/).
+#    (the same happens after edits in the online admin, https://www.sensaair.com/admin/).
 # Run from Terminal:  "_cms/publish.sh"   or click "Publish to website" in the admin.
 set -euo pipefail
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
@@ -31,6 +31,6 @@ else
   step "Uploading to GitHub"
   git pull -q --rebase origin main || fail "Could not merge changes from GitHub. Open Terminal in this folder and run: git status"
   git push -q origin main || fail "Could not upload to GitHub. Check your internet connection and GitHub login."
-  step "Published. The website updates in about 1 minute: https://www.aerisclean.in/"
+  step "Published. The website updates in about 1 minute: https://www.sensaair.com/"
 fi
 date '+%Y-%m-%d %H:%M' > "$CMS/data/last-publish.txt"

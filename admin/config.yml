@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
 #
-# Online admin for www.aerisclean.in → https://www.aerisclean.in/admin/
+# Online admin for www.sensaair.com → https://www.sensaair.com/admin/
 # Sign in with a GitHub account that can write to the repository.
 # Saving commits to the "main" branch; the GitHub Action in .github/workflows/deploy.yml
 # then rebuilds index.html from _cms/template.html + _cms/data/*.json and publishes the site (1–2 minutes).
@@ -16,8 +16,8 @@ app_title: Sensaair Admin
 logo:
   src: /admin/logo.webp
 
-site_url: https://www.aerisclean.in
-display_url: https://www.aerisclean.in
+site_url: https://www.sensaair.com
+display_url: https://www.sensaair.com
 
 # New pictures are converted to WebP, resized to at most 1600 px and stored in assets/products/.
 media_folder: /assets/products
@@ -172,7 +172,7 @@ collections:
       - name: slug
         label: Section address
         required: false
-        hint: "Optional. Short name used in links to this product, e.g. btfh-700 → aerisclean.in/#btfh-700. Leave empty to create it from the title."
+        hint: "Optional. Short name used in links to this product, e.g. btfh-700 → sensaair.com/#btfh-700. Leave empty to create it from the title."
       - name: id
         label: Product ID
         widget: uuid
