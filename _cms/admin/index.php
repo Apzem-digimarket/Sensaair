@@ -104,7 +104,7 @@ $asset = function (string $file): string {
         <p class="auth-lead">First-time setup. This email and password will be used to log in to the admin panel.</p>
       <?php else: ?>
         <h1>Admin login</h1>
-        <p class="auth-lead">Sign in to manage the products on aerisclean.in.</p>
+        <p class="auth-lead">Sign in to manage the products on sensaair.com.</p>
       <?php endif; ?>
       <?php if ($error): ?><div class="alert alert-error" role="alert"><?= e($error) ?></div><?php endif; ?>
       <?php if ($notice): ?><div class="alert alert-ok" role="status"><?= e($notice) ?></div><?php endif; ?>

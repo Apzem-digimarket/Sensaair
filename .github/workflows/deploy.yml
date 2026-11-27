@@ -1,5 +1,5 @@
-# Rebuilds www.aerisclean.in after every change to the main branch,
-# including edits saved in the online admin (https://www.aerisclean.in/admin/).
+# Rebuilds www.sensaair.com after every change to the main branch,
+# including edits saved in the online admin (https://www.sensaair.com/admin/).
 #
 #   1. php _cms/build.php  → index.html from _cms/template.html + _cms/data/*.json
 #      (stops with an error if the content is invalid, so the live site keeps its last good version)
