@@ -1,5 +1,5 @@
 #!/bin/zsh
-# Double-click this file in Finder to open the Aeris Clean admin.
+# Double-click this file in Finder to open the Sensaair admin.
 # It starts the local admin (if it isn't running yet) and opens it in your browser.
 cd "$(dirname "$0")/.."
 if ! lsof -nP -iTCP:8772 -sTCP:LISTEN >/dev/null 2>&1; then
@@ -8,4 +8,4 @@ if ! lsof -nP -iTCP:8772 -sTCP:LISTEN >/dev/null 2>&1; then
   sleep 1
 fi
 open "http://127.0.0.1:8772/admin/"
-echo "Aeris Clean admin: http://127.0.0.1:8772/admin/  (you can close this window)"
+echo "Sensaair admin: http://127.0.0.1:8772/admin/  (you can close this window)"

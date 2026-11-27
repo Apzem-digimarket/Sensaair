@@ -236,10 +236,10 @@ dialog.dialog-wide{width:min(860px,calc(100% - 24px))}
 .publish-info{font-size:11px;color:var(--muted);white-space:nowrap}
 @media (max-width:900px){.publish-wrap{align-items:flex-start}}
 
-/* ---------- Aeris Clean ---------- */
+/* ---------- Sensaair brand ---------- */
 .aeris-brand{display:inline-flex;align-items:center;gap:10px;font:800 18px/1 Archivo,sans-serif;letter-spacing:.06em;color:var(--ink);white-space:nowrap}
 .aeris-brand b{color:#3DB59A;font-weight:800}
-.aeris-brand img{width:40px;height:auto}
+.aeris-brand img{width:auto;height:30px}
 .auth-card .aeris-brand{margin-bottom:24px}
 .mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
 .thumb-drawing{display:grid;place-items:center;font-size:10px;color:#1F4E89;background:#EEF4FA;text-transform:uppercase;letter-spacing:.06em}

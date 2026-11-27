@@ -329,7 +329,7 @@ function sanitize_content(array $in, bool $strict = true): array
         $accent = clean_text($p['titleAccent'] ?? '', 60);
         $kicker = clean_text($p['kicker'] ?? '', 80);
 
-        // Anchor on the page (#aeris-sense): must be unique and not clash with other sections.
+        // Anchor on the page (#sensaair): must be unique and not clash with other sections.
         $slug = slugify(clean_text($p['slug'] ?? '', 80)) ?: slugify(trim($title . ' ' . $accent)) ?: $id;
         $base = $slug;
         for ($n = 2; isset($slugs[$slug]); $n++) {

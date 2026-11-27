@@ -1,6 +1,6 @@
 <?php
 /**
- * Local admin + preview for the Aeris Clean website (run from the "aeris sense" folder):
+ * Local admin + preview for the Sensaair website (run from the "aeris sense" folder):
  *   PHP_CLI_SERVER_WORKERS=4 php -S 127.0.0.1:8772 _cms/router.php
  *
  *   http://127.0.0.1:8772/         live preview, including unpublished changes
@@ -48,7 +48,7 @@ if ($path === '/admin/api.php') {
     require $cms . '/admin/api.php';
     return true;
 }
-$types = ['admin.js' => 'application/javascript', 'admin.css' => 'text/css', 'emblem.webp' => 'image/webp'];
+$types = ['admin.js' => 'application/javascript', 'admin.css' => 'text/css', 'logo.webp' => 'image/webp'];
 if (preg_match('~^/admin/([a-z.]+)$~', $path, $m) && isset($types[$m[1]])) {
     header('Content-Type: ' . $types[$m[1]]);
     header('Cache-Control: no-cache');

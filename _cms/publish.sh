@@ -1,5 +1,5 @@
 #!/bin/bash
-# Publishes the Aeris Clean website → https://www.aerisclean.in
+# Publishes the Sensaair website → https://www.aerisclean.in
 #
 # 1. Builds index.html from _cms/template.html + the content files in _cms/data
 # 2. Commits the page, product images and content to GitHub (branch main)

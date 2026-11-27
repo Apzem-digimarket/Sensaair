@@ -281,7 +281,7 @@
     const details = h('div', {},
       h('div', { class: 'grid-2' },
         field('Title', titleInput, null, true),
-        field('Title accent (in green)', textInput(d, 'titleAccent', { maxlength: '60', placeholder: 'e.g. SENSE' }), 'Optional second word shown in green, like AERIS SENSE.')),
+        field('Title accent (in green)', textInput(d, 'titleAccent', { maxlength: '60', placeholder: 'e.g. BTFH-700' }), 'Optional second word shown in green, like SENSAAIR BTFH-700.')),
       h('div', { class: 'grid-2' },
         field('Product type', textInput(d, 'kicker', { maxlength: '80', placeholder: 'e.g. Air Quality Monitor' }), 'Small green label above the title.'),
         field('Name in quote form', textInput(d, 'quoteName', { maxlength: '160', placeholder: 'Automatic: title - product type' }), 'Shown in the quote form’s “Product of interest” list.')),
@@ -290,7 +290,7 @@
       h('label', { class: 'check' }, h('input', { type: 'checkbox', checked: d.visible, onchange: (ev) => (d.visible = ev.target.checked) }),
         h('span', {}, h('b', {}, 'Show on website'), h('small', {}, 'Untick to keep it as a hidden draft.'))),
       h('details', { class: 'advanced' }, h('summary', {}, 'Advanced: page link name'),
-        field('Link name (anchor)', textInput(d, 'slug', { maxlength: '80', placeholder: 'Automatic from the title' }), 'Used for links like aerisclean.in/#aeris-sense. Changing it breaks old links.')));
+        field('Link name (anchor)', textInput(d, 'slug', { maxlength: '80', placeholder: 'Automatic from the title' }), 'Used for links like aerisclean.in/#sensaair. Changing it breaks old links.')));
 
     // Picture
     const picture = h('div', {},
@@ -304,7 +304,7 @@
         field('Tagline (rest)', textInput(d, 'taglineText', { maxlength: '80', placeholder: 'Healthy Life' }), 'Shown under the picture as “CLEAN AIR · HEALTHY LIFE”.')),
       h('details', { class: 'advanced', open: d.customMedia ? true : null }, h('summary', {}, 'Advanced: custom drawing (SVG) instead of a photo'),
         field('Custom drawing code', textArea(d, 'customMedia', { class: 'code', rows: '8', spellcheck: 'false' }),
-          'If filled in, this drawing is shown instead of the photo (used for the Aeris Sense dimensions drawing). Leave empty to use the photo.')));
+          'If filled in, this drawing is shown instead of the photo (used for the Sensaair dimensions drawing). Leave empty to use the photo.')));
 
     // Features & highlights
     const features = h('div', {},

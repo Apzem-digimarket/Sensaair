@@ -87,18 +87,18 @@ $asset = function (string $file): string {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <meta name="csrf-token" content="<?= e(csrf_token()) ?>">
-  <title><?= $loggedIn ? 'Admin panel' : ($account ? 'Admin login' : 'Admin setup') ?> · Aeris Clean</title>
+  <title><?= $loggedIn ? 'Admin panel' : ($account ? 'Admin login' : 'Admin setup') ?> · Sensaair</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="emblem.webp" type="image/webp">
+  <link rel="icon" href="/assets/brand/sensaair-icon.png" type="image/png">
   <link rel="stylesheet" href="<?= $asset('admin.css') ?>">
 </head>
 <body class="<?= $loggedIn ? 'is-app' : 'is-auth' ?>">
 <?php if (!$loggedIn): ?>
   <main class="auth">
     <form class="auth-card" method="post" autocomplete="on">
-      <span class="aeris-brand"><img src="emblem.webp" alt="" width="40" height="33"><span>AERIS <b>CLEAN</b></span></span>
+      <span class="aeris-brand"><img src="logo.webp" alt="Sensaair" width="124" height="30"></span>
       <?php if (!$account): ?>
         <h1>Create your admin account</h1>
         <p class="auth-lead">First-time setup. This email and password will be used to log in to the admin panel.</p>
@@ -129,7 +129,7 @@ $asset = function (string $file): string {
 <?php else: ?>
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="brand" href="./"><span class="aeris-brand"><img src="emblem.webp" alt="" width="40" height="33"><span>AERIS <b>CLEAN</b></span></span><span class="brand-tag">Admin</span></a>
+      <a class="brand" href="./"><span class="aeris-brand"><img src="logo.webp" alt="Sensaair" width="124" height="30"></span><span class="brand-tag">Admin</span></a>
       <nav class="tabs" id="tabs" aria-label="Admin sections">
         <a href="#products" data-tab="products">Products</a>
         <a href="#range" data-tab="range">We specialize in</a>
