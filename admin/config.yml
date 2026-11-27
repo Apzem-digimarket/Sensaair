@@ -7,14 +7,14 @@
 
 backend:
   name: github
-  repo: Apzem-digimarket/Aeris_Clean
+  repo: Apzem-digimarket/Sensaair
   branch: main
   # Sign in with a GitHub access token (free, no login server needed).
   auth_methods: [token]
 
-app_title: Aeris Clean Admin
+app_title: Sensaair Admin
 logo:
-  src: /admin/emblem.webp
+  src: /admin/logo.webp
 
 site_url: https://www.aerisclean.in
 display_url: https://www.aerisclean.in
@@ -55,7 +55,7 @@ collections:
         default: true
       - name: title
         label: Title
-        hint: "Main name, e.g. AERIS or AERIS CLEAN."
+        hint: "Main name, e.g. SENSAAIR."
       - name: titleAccent
         label: Title — green part
         required: false
